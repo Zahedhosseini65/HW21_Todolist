@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 p-6">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold text-center mb-6">لیست کارها</h1>
+
+        <!-- فرم افزودن Todo -->
+        <form id="todo-form" class="flex flex-col mb-4">
+            <input type="text" id="todo-input" class="p-2 mb-2 border rounded-md"
+                placeholder="کار جدید را وارد کنید..." />
+            <input type="date" id="todo-date" class="p-2 mb-2 border rounded-md" />
+            <button type="submit" class="bg-green-500 text-white p-2 rounded-md hover:bg-green-400">افزودن</button>
+        </form>
+
+        <!-- لیست Todoها -->
+        <div id="todo-list"></div>
+
+        <!-- دکمه حذف همه -->
+        <button id="clear-all-btn" class="w-full bg-red-500 text-white p-2 mt-4 rounded-md hover:bg-red-400">حذف
+            همه</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
